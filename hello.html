@@ -5,17 +5,14 @@
   <title>Typing Animation</title>
   <style>
     @import url('https://fonts.googleapis.com/css?family=Khula:700');
-
     body {
       background: #111;
       margin: 0;
       padding: 0;
     }
-
     .hidden {
       opacity: 0;
     }
-
     .console-container {
       font-family: 'Khula', sans-serif;
       font-size: 4em;
@@ -45,11 +42,8 @@
     <span id="text"></span>
     <div class="console-underscore" id="console">&#95;</div>
   </div>
-
   <script>
-    // function([string1, string2], target id, [color1,color2])
     consoleText(['Hello My Name Is Leomar.', "I\'m passionate about coffee and technology"], 'text', ['tomato', 'rebeccapurple', 'lightblue']);
-
     function consoleText(words, id, colors) {
       if (colors === undefined) colors = ['#fff'];
       var visible = true;
